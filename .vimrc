@@ -18,8 +18,8 @@ syntax on
 let g:gist_use_password_in_gitconfig = 1
 
 if has('vim_starting')
-    set rtp+=~/.vim/bundle/neobundle/neobundle.vim
-    call neobundle#rc(expand('~/.vim/bundle/neobundle'))
+    set rtp+=~/.vim/bundle/neobundle.vim
+    call neobundle#rc(expand('~/.vim/bundle/neobundle.vim'))
 endif
 
 
@@ -32,7 +32,6 @@ NeoBundle 'https://github.com/mattn/webapi-vim.git'
 NeoBundle 'https://github.com/Shougo/neocomplcache.git'
 NeoBundle 'https://github.com/Shougo/unite.vim.git'
 NeoBundle 'https://github.com/thinca/vim-ref.git'
-NeoBundle 'https://github.com/thinca/vim-quickrun.git'
 NeoBundle 'https://github.com/Shougo/vimproc.git'
 NeoBundle 'https://github.com/Shougo/vimshell.git'
 NeoBundle 'https://github.com/hallison/vim-markdown'
@@ -40,7 +39,6 @@ NeoBundle 'https://github.com/mattn/mkdpreview-vim.git'
 NeoBundle 'https://github.com/thinca/vim-quickrun'
 NeoBundle 'https://github.com/thinca/vim-quickrun'
 NeoBundle 'https://github.com/tyru/open-browser.vim'
-NeoBundle 'https://github.com/mattn/mkdpreview-vim'
 
 
 filetype plugin on
