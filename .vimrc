@@ -17,10 +17,14 @@ syntax on
 
 let g:gist_use_password_in_gitconfig = 1
 
-if has('vim_starting')
-    set rtp+=~/.vim/bundle/neobundle.vim
-    call neobundle#rc(expand('~/.vim/bundle/neobundle.vim'))
-endif
+let s:neobundle_dir = expand('~/.vim/bundle/neobundle.vim.git/')
+let s:plugins_dir = expand('~/.vim/plugins')
+
+if isdirectory(s:neobundle_dir)
+  if has('vim_starting')
+    execute 'set runtimepath+=' . s:neobundle_dir
+    call neobundle#rc(s:plugins_dir)
+  endif
 
 
 let g:neobundle_default_git_protocol = "https"
@@ -39,6 +43,7 @@ NeoBundle 'https://github.com/mattn/mkdpreview-vim.git'
 NeoBundle 'https://github.com/thinca/vim-quickrun'
 NeoBundle 'https://github.com/thinca/vim-quickrun'
 NeoBundle 'https://github.com/tyru/open-browser.vim'
+endif
 
 
 filetype plugin on
