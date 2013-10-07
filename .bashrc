@@ -1,7 +1,7 @@
 if [ `uname` = "Darwin" ] ; then
 
     # for mac
-    alias vi='mvim'
+    alias vi='vim'
 else
     # for else
     alias vi='vim'
