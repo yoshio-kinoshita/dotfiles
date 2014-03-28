@@ -13,6 +13,7 @@ set ruler
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nu
 syntax on
 
 let g:gist_use_password_in_gitconfig = 1
