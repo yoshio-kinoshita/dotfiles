@@ -14,6 +14,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nu
+set nocindent
+set lisp
+set showmatch
+
 syntax on
 
 let g:gist_use_password_in_gitconfig = 1
@@ -34,6 +38,8 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'pentie/VimRepress'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'pyru/open-browser.vim'
 
 filetype plugin indent on     
 NeoBundleCheck
